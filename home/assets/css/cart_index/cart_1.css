@@ -173,23 +173,33 @@ ul{
         width: 100%;
         left: -100%;
         top: 0;
-        background: rgba(255,255,255,0.3);
+        background: rgba(255, 255, 255, 0.3);
         backdrop-filter: blur(10px);
-        text-align: left;
+        text-align: center;
         padding: 0px 20px;
         transition: all .3s ease;
+        padding-top: 50px;
     }
+
     .navbar .nav-list.active {
         left: 0;
     }
+
+    .nav-list .fa-search,
+    .nav-list .fa-shopping-cart {
+        display: none;
+    }
+
     .navbar .nav-list li {
         display: block;
-
+        margin: 30px 0;
     }
+
     .navbar .nav-list li a {
         display: inline-block;
         margin: 10px 0px;
         font-size: 20px;
+        font-weight: 600;
         color: #000;
         cursor: pointer;
     }
@@ -198,10 +208,10 @@ ul{
     .scroll-up-btn {
         right: 15px;
         bottom: 15px;
-        width: 32px;
-        height: 32px;
+        width: 42px;
+        height: 42px;
         font-size: 23px;
-        line-height: 36px;
+        line-height: 46px;
     }
 }
 /* END OF NAV */
@@ -272,6 +282,13 @@ ul{
         grid-template-columns: repeat(1, 1fr);
         padding: 0px 20px;
     }
+    .home-box-1 {
+        text-align: left;
+    }
+    .home-box-2 h1 {
+        font-size: 30px;
+        font-weight: bold;
+    }
     
 }
 /* END OF HOME */
@@ -284,7 +301,7 @@ ul{
     margin: 0 auto;
     padding: 0px 20px;
     grid-gap: 50px;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 h4 {
     padding: 10px 0px 20px 0px;
@@ -462,11 +479,12 @@ textarea::placeholder {
     outline: none;
     font-size: 17px;
     font-weight:bold;
-    padding: 10px 15px;
+    padding: 8px 15px;
     color: #fff;
     background: #15ca8b;
     transition: 1s;
     border-radius: 4px;
+    margin: 20px 0;
 }
 .sumbit-btn:hover {
     background: none;
@@ -495,6 +513,7 @@ textarea::placeholder {
     font-size: 18px;
     font-weight: 500;
     padding: 10px 0px;
+
 }
 /* END OF DELIVERY */
 
@@ -537,6 +556,7 @@ textarea::placeholder {
 
 @media(max-width:425px){
     .footer-grid {
+        padding: 50px 10px 10px 10px;
         grid-template-columns: repeat(1, 1fr);
     }
 }
@@ -549,7 +569,9 @@ textarea::placeholder {
     text-align: center;
     color: #fff;
     cursor: default;
-    padding: 5px 0px;
+    padding: 10px 0px;
+    font-size: 15px;
+    font-weight: 400;
 }
 .last-footer a {
     text-transform: uppercase;

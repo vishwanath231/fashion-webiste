@@ -550,6 +550,7 @@ form .form-row .textarea{
 }
 @media(max-width:425px){
     .footer-grid {
+         padding: 50px 10px 10px 10px;
         grid-template-columns: repeat(1, 1fr);
     }
 }
